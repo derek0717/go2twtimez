@@ -6,6 +6,7 @@
     <meta name="viewport" content="height=device-height, initial-scale=1">
     
     <!-- apple web clip -->
+    <meta name="apple-mobile-web-app-title" content="TwTimez">
     <!-- icon --> <!-- default is 60x60 -->
     <link rel="apple-touch-icon" href="img/touch-icon-iphone.png">
     <link rel="apple-touch-icon" sizes="76x76" href="img/touch-icon-ipad.png">
@@ -28,6 +29,9 @@
     <div id="link"></div>
     <script type="text/javascript">
       document.getElementById("link").innerHTML = window.location;
+      if ("standalone" in window.navigator && window.navigator.standalone){
+        window.location = 'http://www.twtimez.net';
+      }
     </script>
   </body>
 </html>
