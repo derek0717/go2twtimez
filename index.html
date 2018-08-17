@@ -28,7 +28,7 @@
   <body>
     <div id="link"></div>
     <script type="text/javascript">
-      document.getElementById("link").innerHTML = window.location;
+      document.getElementById("link").innerHTML = 'Add this page to homescreen for a standalone '+window.location;
        if ("standalone" in window.navigator && window.navigator.standalone){
         document.location.href = 'http://www.twtimez.net';
        }
