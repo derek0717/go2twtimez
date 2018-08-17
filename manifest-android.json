@@ -1,6 +1,6 @@
 {
-  "short_name": "Yday Weather",
-  "name": "Yesterdays Weather",
+  "short_name": "Twtimez",
+  "name": "Twitterの人気ランキングサイト | Twtimez",
   "icons": [
     {
       "src": "images/apple-touch-icon.png",
@@ -39,7 +39,7 @@
       "density": "3.0"
     }
   ],
-  "start_url": "index.php",
+  "start_url": "index.html",
   "display": "standalone",
   "orientation": "portrait"
 }
