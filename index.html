@@ -34,10 +34,11 @@
    
   </head>
   <body>
-    <a id="link" href="http://www.twtimez.net" target="_blank">www.twtimez.net</a>
+    <a id="link" href="http://www.twtimez.net" target="_self">www.twtimez.net</a>
     <script type="text/javascript">
-          document.getElementById('link').click();
-       }
+      if ("standalone" in window.navigator && window.navigator.standalone){
+        document.getElementById('link').click();
+      }
     </script>
   </body>
 </html>
