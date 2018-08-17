@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <title>Portal to TwTimez</title>
     <meta name="viewport" content="height=device-height, initial-scale=1">
+    <script type="text/javascript">
+       if ("standalone" in window.navigator && window.navigator.standalone){
+          document.addEventListener('click', function(e) {
+              e.preventDefault();
+              location.href = e.target.href;
+          },false);
+       }
+    </script>
     
     <!-- apple web clip -->
     <meta name="apple-mobile-web-app-title" content="TwTimez">
@@ -26,13 +34,8 @@
    
   </head>
   <body>
-    <a id="link" href="http://www.twtimez.net" target="_blank">http://www.twtimez.net</a>
+    <a id="link" href="http://www.twtimez.net" target="_blank">www.twtimez.net</a>
     <script type="text/javascript">
-       if ("standalone" in window.navigator && window.navigator.standalone){
-          document.addEventListener('click', function(e) {
-              e.preventDefault();
-              location.href = e.target.href;
-          },false);
           document.getElementById('link').click();
        }
     </script>
