@@ -26,11 +26,14 @@
    
   </head>
   <body>
-    <div id="link"></div>
+    <a id="link" href="http://www.twtimez.net" target="_blank">http://www.twtimez.net</a>
     <script type="text/javascript">
-      document.getElementById("link").innerHTML = 'Add this page to homescreen for a standalone '+window.location;
        if ("standalone" in window.navigator && window.navigator.standalone){
-        document.location.href = 'http://www.twtimez.net';
+          document.addEventListener('click', function(e) {
+              e.preventDefault();
+              location.href = e.target.href;
+          },false);
+          document.getElementById('link').click();
        }
     </script>
   </body>
